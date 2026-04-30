@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useRegistration } from './composables/useRegistration'
 import ClassList from './components/ClassList.vue'
 import RegistrationForm from './components/RegistrationForm.vue'
+import AppFooter from './components/UI/AppFooter.vue'
 
 const { classes, selectedClassId, form, totalFee, isFull, register, resetForm } = useRegistration()
 
@@ -130,99 +131,8 @@ const handleRegister = async () => {
       @cancel="handleCancel"
     />
 
-    <!-- Stats Section -->
-    <section class="py-24 bg-slate-900 text-white overflow-hidden relative">
-      <div class="container mx-auto px-6 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-          <div>
-            <div class="text-5xl font-black text-[#42b883] mb-2">95%</div>
-            <div class="text-slate-400 font-bold uppercase tracking-widest text-xs">
-              Job Placement
-            </div>
-          </div>
-          <div>
-            <div class="text-5xl font-black text-[#42b883] mb-2">15+</div>
-            <div class="text-slate-400 font-bold uppercase tracking-widest text-xs">
-              Expert Tutors
-            </div>
-          </div>
-          <div>
-            <div class="text-5xl font-black text-[#42b883] mb-2">50+</div>
-            <div class="text-slate-400 font-bold uppercase tracking-widest text-xs">
-              Global Partners
-            </div>
-          </div>
-          <div>
-            <div class="text-5xl font-black text-[#42b883] mb-2">24/7</div>
-            <div class="text-slate-400 font-bold uppercase tracking-widest text-xs">Lab Access</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-16">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-10">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-black tracking-tighter text-slate-900 uppercase"
-              >Learning Hub</span
-            >
-          </div>
-          <p class="text-slate-400 text-sm">
-            &copy; 2026 Learning Hub. All rights reserved. Built with precision for Leaning.
-          </p>
-          <div class="flex gap-6">
-            <a href="#" class="text-slate-400 hover:text-[#42b883] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg
-            ></a>
-            <a href="#" class="text-slate-400 hover:text-[#42b883] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
-            ></a>
-            <a href="#" class="text-slate-400 hover:text-[#42b883] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-                /></svg
-            ></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <AppFooter />
   </div>
 </template>
 
