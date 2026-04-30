@@ -38,13 +38,10 @@ const handleRegister = async () => {
       <nav class="container mx-auto px-6 flex justify-between items-center mb-24 animate-fade-in">
         <div class="flex items-center gap-3">
           <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase"
-            >Kad ICT Hub</span
+            >Learning Hub</span
           >
         </div>
         <div class="hidden md:flex items-center gap-10 text-sm font-bold text-slate-500">
-          <a href="#" class="hover:text-[#42b883] transition-colors">All Courses</a>
-          <a href="#" class="hover:text-[#42b883] transition-colors">Our Hubs</a>
-          <a href="#" class="hover:text-[#42b883] transition-colors">Success Stories</a>
           <button
             @click="showForm = true"
             class="px-6 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/10"
@@ -79,7 +76,7 @@ const handleRegister = async () => {
             that define tomorrow.
           </h1>
           <p class="max-w-2xl text-xl text-slate-500 leading-relaxed mb-12">
-            Join Kaduna's premier ICT training hub. We provide expert-led training in high-demand
+            Join the premier ICT training hub. We provide expert-led training in high-demand
             technologies to help you build a global career.
           </p>
           <div class="flex flex-col sm:flex-row items-center gap-6">
@@ -89,24 +86,6 @@ const handleRegister = async () => {
             >
               Explore Programs
             </button>
-            <div class="flex items-center gap-4 py-2">
-              <div class="flex -space-x-3">
-                <div
-                  v-for="i in 4"
-                  :key="i"
-                  class="w-12 h-12 rounded-full border-4 border-white bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600"
-                >
-                  <img
-                    :src="`https://i.pravatar.cc/150?u=${i}`"
-                    class="w-full h-full rounded-full object-cover"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-slate-900 font-bold leading-none">2,500+ Alumni</span>
-                <span class="text-slate-500 text-sm">Working globally</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -187,11 +166,11 @@ const handleRegister = async () => {
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="flex items-center gap-3">
             <span class="text-xl font-black tracking-tighter text-slate-900 uppercase"
-              >Kad ICT Hub</span
+              >Learning Hub</span
             >
           </div>
           <p class="text-slate-400 text-sm">
-            &copy; 2026 Kad ICT Hub. All rights reserved. Built with precision for Kaduna.
+            &copy; 2026 Learning Hub. All rights reserved. Built with precision for Leaning.
           </p>
           <div class="flex gap-6">
             <a href="#" class="text-slate-400 hover:text-[#42b883] transition-colors"
@@ -248,26 +227,4 @@ const handleRegister = async () => {
 </template>
 
 <style>
-/* Font is imported in main.css as requested */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f8fafc;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-.shadow-3xl {
-  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.1);
-}
 </style>
